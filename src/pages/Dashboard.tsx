@@ -4,7 +4,6 @@ import { user } from "../data";
 import Currency from "@/utils/Currency";
 import FlickeringGrid from "@/components/ui/flickering-grid";
 import TransactionHistory from "@/components/TransactionHistory";
-import Swap from "@/components/Withdraw";
 import { DepositDrawer } from "@/components/DepositDrawer";
 import { WithdrawDrawer } from "@/components/WithdrawDrawer";
 import Assets from "@/components/Assets";

@@ -1,6 +1,5 @@
 import { Transaction } from "@/types";
 import { Card, CardContent } from "./ui/card";
-import { Avatar, AvatarImage } from "./ui/avatar";
 import Currency from "@/utils/Currency";
 
 interface transactionProp {

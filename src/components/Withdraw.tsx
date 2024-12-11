@@ -64,7 +64,9 @@ const Withdraw = () => {
               className="w-full border-0 outline-0 focus-visible:ring-0   dark:text-muted-foreground p-0 px-2"
               placeholder="Amount"
               value={amount > 0 ? amount : ""}
-              onChange={(e: ChangeEvent) => setAmount(() => e.target.value)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setAmount(() => Number(e.target.value))
+              }
             ></Input>
             {selectedCrypto && (
               <div className="flex justify-center items-center mr-2">
