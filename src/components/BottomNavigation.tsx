@@ -6,7 +6,7 @@ const BottomNavigation = () => {
   // console.log(location);
 
   return (
-    <div className="grid grid-cols-4 gap-4 fixed bottom-0 w-full rounded-t-xl bg-black py-3 px-2 z-10 max-w-md">
+    <div className="grid grid-cols-4 gap-4 fixed bottom-0 w-full rounded-t-xl bg-black py-3 px-2 z-10 max-w-[385px]">
       <Link to={"/"}>
         <div
           className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
