@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardTitle } from "./ui/card";
-import { crypto, user } from "@/data";
+import { crypto } from "@/data";
 import Currency from "@/utils/Currency";
-import { ChevronDown } from "lucide-react";
 
 const Assets = () => {
   // const [showAll, setShowAll] = useState<boolean>(false);

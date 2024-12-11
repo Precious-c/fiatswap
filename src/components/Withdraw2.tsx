@@ -1,20 +1,18 @@
-import React, { ChangeEvent, ReactElement, useEffect, useState } from "react";
-import { Card, CardContent, CardTitle } from "./ui/card";
+import { ChangeEvent, useEffect, useState } from "react";
+import { Card, CardContent } from "./ui/card";
 import { SelectCrypto } from "./SelectCrypto";
-import { coins, rate, user } from "@/data";
+import { crypto, rate, user } from "@/data";
 import { Input } from "./ui/input";
 import getSymbolFromCurrency from "currency-symbol-map";
-import { Coin } from "@/types";
 import Currency from "@/utils/Currency";
 import { Button } from "./ui/button";
-import { SwapDrawer } from "./SwapDrawer";
-import { Ghost } from "lucide-react";
+import { Crypto } from "@/types";
 
 const Withdraw = () => {
-  const [selectedCoin, setSelectedCoin] = useState<Coin | undefined>();
+  const [selectedCrypto, setSelectedCrypto] = useState<Crypto | undefined>();
   const [amount, setAmount] = useState<number>(0);
 
-  useEffect(() => console.log(selectedCoin), [selectedCoin]);
+  useEffect(() => console.log(selectedCrypto), [selectedCrypto]);
   useEffect(() => console.log(amount), [amount]);
 
   // const handleAmountInput = (e: ChangeEvent | ) => {};
@@ -27,9 +25,9 @@ const Withdraw = () => {
           <div className="flex flex-col mb-2">
             <p className="mb-2">Asset</p>
             <SelectCrypto
-              coins={coins}
-              selectedCoin={selectedCoin}
-              setSelectedCoin={setSelectedCoin}
+              coins={crypto}
+              selectedCrypto={selectedCrypto}
+              setSelectedCrypto={setSelectedCrypto}
             />
           </div>
 

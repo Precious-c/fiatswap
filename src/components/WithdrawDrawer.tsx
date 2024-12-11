@@ -1,34 +1,22 @@
 import { bouncy } from "ldrs";
 
 bouncy.register();
-import { QRCodeSVG } from "qrcode.react";
-
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
-  DrawerClose,
-  DrawerContent,
   DrawerDescription,
-  DrawerFooter,
+  DrawerContent,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import { user } from "@/data";
-import { Card } from "./ui/card";
 // import { copyToClipboard } fro@/utils/copyToClipboardard";
-import toast, { Toaster } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
-
 import Withdraw from "./Withdraw";
 import { Kyc } from "./Kyc";
-import { Modal } from "./Modal";
-const transaction = user.transactionHistory[0];
 
 export function WithdrawDrawer() {
-  const navigate = useNavigate();
   const [loading, setLoading] = useState<boolean>(false);
 
   setTimeout(() => setLoading(false), 3000);

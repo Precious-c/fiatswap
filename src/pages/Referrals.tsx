@@ -1,7 +1,6 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 import avatarImg from "@/assets/avatars/Avatar-3.png";
-import React from "react";
 import { Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { user } from "@/data";
@@ -61,7 +60,9 @@ const Referrals = () => {
         </div>
       </div>
 
-      <Button className=" font-semibold fixed bottom-[80px] right-5 left-5 max-w-md">Invite</Button>
+      <Button className=" font-semibold fixed bottom-[80px] right-5 left-5 max-w-[412px]">
+        Invite
+      </Button>
     </div>
   );
 };

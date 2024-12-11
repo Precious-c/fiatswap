@@ -19,6 +19,17 @@ export interface User {
   bank: BankDetails;
 }
 
+export interface Task {
+  id: string;
+  title: string;
+  description: string;
+  dueDate: string | null;
+  createdAt: string;
+  link: string;
+  reward: number;
+  status: "active" | "inactive";
+}
+
 export interface Friends {
   username: string;
   status: "completed" | "pending";
@@ -52,13 +63,13 @@ export interface Transaction {
   timestamp: Date;
 }
 
-export interface Task {
-  id: string;
-  title: string;
-  description: string;
-  isCompleted: boolean;
-  reward: number;
-}
+// export interface Task {
+//   id: string;
+//   title: string;
+//   description: string;
+//   isCompleted: boolean;
+//   reward: number;
+// }
 
 export interface TaskCompletion {
   userId: string;

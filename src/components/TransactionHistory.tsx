@@ -1,8 +1,6 @@
-import React from "react";
 import { Card, CardContent, CardTitle } from "./ui/card";
 import { user } from "@/data";
 import TransactionCard from "./TransactionCard";
-import FlickeringGrid from "./ui/flickering-grid";
 
 const TransactionHistory = () => {
   return (

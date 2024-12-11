@@ -1,4 +1,4 @@
-import { Crypto, User } from "./types";
+import { Crypto, Task, User } from "./types";
 import profileAvatar from "./assets/avatars/Avatar-1.png";
 
 export const user: User = {
@@ -202,9 +202,118 @@ export const user: User = {
       timestamp: new Date("2024-12-02T15:30:00Z"),
     },
   ],
-  // createdAt: new Date("2024-11-15T08:00:00Z"),
+  // "tasksSummary": {
+  //     "totalTasks": 15,
+  //     "completedTasks": 8,
+  //     "pendingTasks": 5,
+  //     "overdueTasks": 2
+  //   }
+  // // createdAt: new Date("2024-11-15T08:00:00Z"),
   // updatedAt: new Date("2024-12-03T10:00:00Z"),
 };
+
+export const tasks: Task[] = [
+  {
+    id: "task001",
+    title: "Join Telegram Channel",
+    description: "Join our official Telegram channel to stay updated.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://t.me/official_channel",
+    reward: 10,
+    status: "active",
+  },
+  {
+    id: "task002",
+    title: "Invite a Friend",
+    description: "Invite one friend to join the app via your referral link.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://example.com/invite",
+    reward: 20,
+    status: "active",
+  },
+  {
+    id: "task003",
+    title: "View an Advertisement",
+    description: "Watch a 30-second advertisement to earn rewards.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://example.com/ad-view",
+    reward: 5,
+    status: "active",
+  },
+  {
+    id: "task004",
+    title: "Follow Us on Twitter",
+    description: "Follow our Twitter account for updates and news.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://twitter.com/official_account",
+    reward: 15,
+    status: "active",
+  },
+  {
+    id: "task005",
+    title: "Complete a Survey",
+    description: "Answer a short survey about your preferences.",
+    dueDate: "2024-12-20T00:00:00.000Z",
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://example.com/survey",
+    reward: 25,
+    status: "active",
+  },
+  {
+    id: "task006",
+    title: "Share on Facebook",
+    description: "Share our app on Facebook to earn rewards.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://example.com/facebook-share",
+    reward: 15,
+    status: "active",
+  },
+  {
+    id: "task007",
+    title: "React to a Post",
+    description: "React to our latest post on Instagram.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://instagram.com/official_account",
+    reward: 10,
+    status: "active",
+  },
+  {
+    id: "task008",
+    title: "Daily Check-in",
+    description: "Log in daily to claim your reward.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://example.com/daily-checkin",
+    reward: 5,
+    status: "active",
+  },
+  {
+    id: "task009",
+    title: "Watch a Tutorial",
+    description: "Watch a tutorial video to learn how to use the app.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://example.com/tutorial-video",
+    reward: 8,
+    status: "active",
+  },
+  {
+    id: "task010",
+    title: "Rate Our App",
+    description: "Leave a review for our app on the Play Store.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://play.google.com/store/apps/details?id=app",
+    reward: 30,
+    status: "active",
+  },
+];
 
 export const crypto: Crypto[] = [
   {
