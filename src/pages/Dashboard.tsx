@@ -16,7 +16,7 @@ const Dashboard = () => {
         className="z-0 absolute inset-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)] max-w-[385px] self-center justify-self-center"
         squareSize={4}
         gridGap={6}
-        color="#4b3b4d"
+        color="#9d78a1"
         maxOpacity={0.5}
         flickerChance={0.1}
         height={1500}
