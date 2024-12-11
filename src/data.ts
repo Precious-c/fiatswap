@@ -214,13 +214,23 @@ export const user: User = {
 
 export const tasks: Task[] = [
   {
+    id: "task008",
+    title: "Daily Check-in",
+    description: "Log in daily to claim your reward.",
+    dueDate: null,
+    createdAt: "2024-12-11T00:00:00.000Z",
+    link: "https://example.com/daily-checkin",
+    reward: 150,
+    status: "active",
+  },
+  {
     id: "task001",
     title: "Join Telegram Channel",
     description: "Join our official Telegram channel to stay updated.",
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://t.me/official_channel",
-    reward: 10,
+    reward: 200,
     status: "active",
   },
   {
@@ -230,7 +240,7 @@ export const tasks: Task[] = [
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://example.com/invite",
-    reward: 20,
+    reward: 200,
     status: "active",
   },
   {
@@ -240,7 +250,7 @@ export const tasks: Task[] = [
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://example.com/ad-view",
-    reward: 5,
+    reward: 150,
     status: "active",
   },
   {
@@ -250,7 +260,7 @@ export const tasks: Task[] = [
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://twitter.com/official_account",
-    reward: 15,
+    reward: 150,
     status: "active",
   },
   {
@@ -260,7 +270,7 @@ export const tasks: Task[] = [
     dueDate: "2024-12-20T00:00:00.000Z",
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://example.com/survey",
-    reward: 25,
+    reward: 500,
     status: "active",
   },
   {
@@ -270,7 +280,7 @@ export const tasks: Task[] = [
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://example.com/facebook-share",
-    reward: 15,
+    reward: 200,
     status: "active",
   },
   {
@@ -280,19 +290,10 @@ export const tasks: Task[] = [
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://instagram.com/official_account",
-    reward: 10,
+    reward: 150,
     status: "active",
   },
-  {
-    id: "task008",
-    title: "Daily Check-in",
-    description: "Log in daily to claim your reward.",
-    dueDate: null,
-    createdAt: "2024-12-11T00:00:00.000Z",
-    link: "https://example.com/daily-checkin",
-    reward: 5,
-    status: "active",
-  },
+
   {
     id: "task009",
     title: "Watch a Tutorial",
@@ -300,7 +301,7 @@ export const tasks: Task[] = [
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://example.com/tutorial-video",
-    reward: 8,
+    reward: 280,
     status: "active",
   },
   {
@@ -310,7 +311,7 @@ export const tasks: Task[] = [
     dueDate: null,
     createdAt: "2024-12-11T00:00:00.000Z",
     link: "https://play.google.com/store/apps/details?id=app",
-    reward: 30,
+    reward: 300,
     status: "active",
   },
 ];
