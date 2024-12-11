@@ -10,13 +10,13 @@ import Assets from "@/components/Assets";
 
 const Dashboard = () => {
   return (
-    <div className="p-4 flex flex-col gap-6">
+    <div className="p-4 flex flex-col justify-center gap-6">
       {/* greeting/welcome */}
       <FlickeringGrid
-        className="z-0 absolute inset-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
+        className="z-0 absolute inset-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)] max-w-[385px] self-center justify-self-center"
         squareSize={4}
         gridGap={6}
-        color="#555"
+        color="#2a212b"
         maxOpacity={0.5}
         flickerChance={0.1}
         height={1500}
