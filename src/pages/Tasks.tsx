@@ -1,9 +1,8 @@
 import { TaskDrawer } from "@/components/TaskDrawer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { tasks } from "@/data";
 import { Check } from "lucide-react";
-import { useState } from "react";
 
 const Tasks = () => {
   // const [taskStatus, setTaskStatus] = useState<"notCompleted" | "pending" | "completed">(
