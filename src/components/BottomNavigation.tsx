@@ -1,4 +1,4 @@
-import { FileClock, HandCoins, HomeIcon, User, Users } from "lucide-react";
+import { HandCoins, HomeIcon, User, Users } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const BottomNavigation = () => {

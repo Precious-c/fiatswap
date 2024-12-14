@@ -2,14 +2,6 @@ import { bouncy } from "ldrs";
 
 bouncy.register();
 import { Button } from "@/components/ui/button";
-import {
-  Drawer,
-  DrawerDescription,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
 import { Task } from "@/types";
 import { useEffect, useState } from "react";
 import { Check } from "lucide-react";
@@ -24,7 +16,6 @@ export function TaskDrawer({ task }: taskDrawerProps) {
   const [taskStatus, setTaskStatus] = useState<"notCompleted" | "pending" | "completed">(
     "notCompleted"
   );
-  const [timer, setTimer] = useState<number>(0);
 
   useEffect(() => {
     taskStatus === "pending" && setTimeout(() => setTaskStatus("completed"), 10000);

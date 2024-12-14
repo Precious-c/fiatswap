@@ -4,7 +4,6 @@ import Dashboard from "./pages/Dashboard";
 import Tasks from "./pages/Tasks";
 import Referrals from "./pages/Referrals";
 import Loading from "./pages/Loading";
-import History from "./pages/Profile";
 import Profile from "./pages/Profile";
 // import Loading from "./pages/splash/Loading";
 // import SplashLayout from "./Layouts/SplashLayout";
