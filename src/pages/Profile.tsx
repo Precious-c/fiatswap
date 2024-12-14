@@ -1,7 +1,6 @@
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 import avatarImg from "@/assets/avatars/Avatar-4.png";
 
-import { Button } from "@/components/ui/button";
 import { user } from "@/data";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardTitle } from "@/components/ui/card";
