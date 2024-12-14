@@ -4,7 +4,8 @@ import Dashboard from "./pages/Dashboard";
 import Tasks from "./pages/Tasks";
 import Referrals from "./pages/Referrals";
 import Loading from "./pages/Loading";
-import History from "./pages/History";
+import History from "./pages/Profile";
+import Profile from "./pages/Profile";
 // import Loading from "./pages/splash/Loading";
 // import SplashLayout from "./Layouts/SplashLayout";
 // import Premium from "./pages/splash/Premium";
@@ -34,8 +35,8 @@ const Routes = createBrowserRouter([
         element: <Referrals />,
       },
       {
-        path: "history",
-        element: <History />,
+        path: "profile",
+        element: <Profile />,
       },
       //   {
       //     path: "friends",

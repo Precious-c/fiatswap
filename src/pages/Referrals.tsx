@@ -7,7 +7,7 @@ import { user } from "@/data";
 
 const Referrals = () => {
   return (
-    <div className="py-6 px-4 flex flex-col  justify-between pb-28">
+    <div className="py-6 px-4 flex flex-col  justify-between pb-28 max-w-[350px]">
       <div>
         <div className="mb-6 ">
           <h2 className="font-bold text-2xl text-center mb-4">Invite Friends</h2>
@@ -60,7 +60,7 @@ const Referrals = () => {
         </div>
       </div>
 
-      <Button className=" font-semibold fixed bottom-[80px] right-5 left-5 max-w-[412px]">
+      <Button className=" font-semibold fixed bottom-[80px] right-5 left-5 w-full max-w-[320px] justify-self-center">
         Invite
       </Button>
     </div>

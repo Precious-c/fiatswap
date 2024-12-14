@@ -4,7 +4,7 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="max-w-md ">
+    <div className="">
       <RouterProvider router={Routes} />
       <Toaster />
     </div>
