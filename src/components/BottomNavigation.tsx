@@ -9,7 +9,7 @@ const BottomNavigation = () => {
     <div className="grid grid-cols-4 gap-4 fixed bottom-0 w-full rounded-t-xl bg-black py-3 px-2 z-10 max-w-[366px]">
       <Link to={"/"}>
         <div
-          className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
+          className={` flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
             location === "/" ? "text-purple-500" : "text-white"
           }`}
         >
@@ -20,8 +20,8 @@ const BottomNavigation = () => {
 
       <Link to={"/referrals"}>
         <div
-          className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/referrals" && "text-purple-500"
+          className={` flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
+            location === "/referrals" ? "text-purple-500" : "text-white"
           }`}
         >
           <Users className="text-xl" />
@@ -31,8 +31,8 @@ const BottomNavigation = () => {
 
       <Link to={"/tasks"}>
         <div
-          className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/tasks" && "text-purple-500"
+          className={` flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
+            location === "/tasks" ? "text-purple-500" : "text-white"
           }`}
         >
           <HandCoins className="text-xl" />
@@ -42,8 +42,8 @@ const BottomNavigation = () => {
 
       <Link to={"/profile"}>
         <div
-          className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/profile" && "text-purple-500"
+          className={` flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
+            location === "/profile" ? "text-purple-500" : "text-white"
           }`}
         >
           <User className="text-xl" />
