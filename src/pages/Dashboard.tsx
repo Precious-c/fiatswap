@@ -10,7 +10,7 @@ import Assets from "@/components/Assets";
 
 const Dashboard = () => {
   return (
-    <div className="py-4 flex flex-col justify-center gap-6 ">
+    <div className="w-full py-4 flex flex-col justify-center gap-6 ">
       {/* greeting/welcome */}
       <FlickeringGrid
         className="z-0 absolute inset-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)] max-w-[380px] justify-self-center left-1"
@@ -23,7 +23,7 @@ const Dashboard = () => {
         // width={800}
       />
 
-      <div className="z-10 flex items-center gap-3">
+      <div className="z-10 flex items-center gap-3 mx-4">
         <Avatar className="w-16 h-16">
           <AvatarImage src={user.profilePictureUrl} />
           <AvatarFallback>CN</AvatarFallback>
