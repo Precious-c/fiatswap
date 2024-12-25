@@ -41,7 +41,7 @@ const Tasks = () => {
         <h5 className="font-semibold mb-4 text-lg">Completed tasks</h5>
         <div className="flex flex-col gap-2">
           {tasks.map((task) => (
-            <Card className="p-2 flex justify-between items-center">
+            <Card key={task.id} className="p-2 flex justify-between items-center">
               <div>
                 <h4>{task.title}</h4>
                 <p>+ {task.reward}</p>

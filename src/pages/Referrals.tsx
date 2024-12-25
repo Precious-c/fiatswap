@@ -32,8 +32,11 @@ const Referrals = () => {
         {/* frens list */}
         <div className="flex flex-col gap-2">
           {user.referredFriends &&
-            user.referredFriends.map((friend) => (
-              <Card className="flex items-center p-1 gap-2 justify-between border-0">
+            user.referredFriends.map((friend, i) => (
+              <Card
+                key={friend.username}
+                className="flex items-center p-1 gap-2 justify-between border-0"
+              >
                 {/* <CardContent className="flex items-center gap-2"> */}
                 <div className="flex items-center p-2 gap-2">
                   <Avatar className="w-10 h-10">

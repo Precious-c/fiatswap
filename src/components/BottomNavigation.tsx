@@ -3,14 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 
 const BottomNavigation = () => {
   const location = useLocation().pathname;
-  // console.log(location);
+  console.log(location);
 
   return (
     <div className="grid grid-cols-4 gap-4 fixed bottom-0 w-full rounded-t-xl bg-black py-3 px-2 z-10 max-w-[366px]">
       <Link to={"/"}>
         <div
           className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/" && "text-purple-500"
+            location === "/" ? "text-purple-500" : "text-white"
           }`}
         >
           <HomeIcon className="text-xl" />
