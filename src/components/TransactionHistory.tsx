@@ -1,21 +1,13 @@
-import { Card, CardContent, CardTitle } from "./ui/card";
+import { Card } from "./ui/card";
 import { user } from "@/data";
-import TransactionCard from "./TransactionCard";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@radix-ui/react-accordion";
-import {
-  Check,
-  CheckCircle,
-  ChevronDown,
-  Download,
-  Hourglass,
-  HourglassIcon,
-  X,
-} from "lucide-react";
+import { Check, Download, HourglassIcon, X } from "lucide-react";
 import Currency from "@/utils/Currency";
 
 const TransactionHistory = () => {
