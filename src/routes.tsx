@@ -5,16 +5,8 @@ import Tasks from "./pages/Tasks";
 import Referrals from "./pages/Referrals";
 import Loading from "./pages/Loading";
 import Profile from "./pages/Profile";
-// import Loading from "./pages/splash/Loading";
-// import SplashLayout from "./Layouts/SplashLayout";
-// import Premium from "./pages/splash/Premium";
-// import Age from "./pages/splash/Age";
-// import Username from "./pages/splash/Username";
-// import ChannelJoined from "./pages/splash/ChannelJoined";
-// import Home from "./pages/apps/Home";
-// import Collaboration from "./pages/apps/Collaboration";
-// import Leaderboard from "./pages/apps/Leaderboard";
-// import Friends from "./pages/apps/Friends";
+import { HelpCenter } from "./components/HelpCenter";
+import { AccountSecurity } from "./components/AccountSecurity";
 
 const Routes = createBrowserRouter([
   {
@@ -36,6 +28,14 @@ const Routes = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "help",
+        element: <HelpCenter />,
+      },
+      {
+        path: "security",
+        element: <AccountSecurity />,
       },
       //   {
       //     path: "friends",

@@ -7,6 +7,7 @@ export interface User {
   email: string;
   phoneNumber?: string;
   wallet: Wallet;
+  verificationLevel: 1 | 2 | 3;
   preferredCurrency: "NGN" | "USD";
   profilePictureUrl?: string;
   darkMode?: boolean;

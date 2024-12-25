@@ -19,7 +19,10 @@ const Assets = () => {
       <CardTitle className="mb-5 font-poppins">Assets</CardTitle>
       <CardContent className="p-0 flex justify-between flex-col gap-4 ">
         {crypto.slice(0, rowsToDisplay).map((coin) => (
-          <Card className="border-0 flex  h-10 items-center p-3 pl-0  rounded-none">
+          <Card
+            key={coin.symbol}
+            className="border-0 flex  h-10 items-center p-3 pl-0  rounded-none"
+          >
             <div className="flex  w-full items-center">
               <div className="dark:bg-black w-12 p-3 rounded-lg mr-4">
                 <img src={coin.iconUrl} alt="" className="w-10" />
