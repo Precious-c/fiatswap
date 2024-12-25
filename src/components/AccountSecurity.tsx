@@ -29,7 +29,7 @@ export function AccountSecurity() {
   };
 
   return (
-    <div className="py-4 pb-16">
+    <div className="p-4  pb-16">
       <div className="mx-auto w-full max-w-sm">
         <h2 className="text-lg font-bold text-center">Account Security</h2>
 

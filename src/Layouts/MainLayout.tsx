@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div className="">
+    <div className="flex justify-center">
       <Outlet />
       <BottomNavigation />
     </div>

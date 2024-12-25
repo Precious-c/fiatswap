@@ -11,7 +11,7 @@ const Tasks = () => {
 
   return (
     // className="py-6 px-4 flex flex-col  justify-between pb-28 max-w-[350px]"
-    <div className="w-full py-6 px-2 flex flex-col  justify-between pb-2 max-w-[350px]">
+    <div className="w-full py-6 px-2 flex flex-col  justify-between pb-2 max-w-[350px] ">
       <div className="mb-6 ">
         <h2 className="font-bold text-2xl text-center mb-4">Tasks</h2>
         <p className="text-center">

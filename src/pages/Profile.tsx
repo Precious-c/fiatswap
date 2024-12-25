@@ -10,7 +10,9 @@ import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
-    <div className=" py-6 px-4 flex flex-col  justify-between  gap-2 pb-20 min-w max-w-[375px]">
+    // <div className="w-full py-6 px-2 flex flex-col  justify-between pb-2 max-w-[350px] ">
+
+    <div className="w-full py-6 px-2 flex flex-col  justify-between  gap-2 pb-20 min-w max-w-[375px]">
       <div className="flex flex-col justify-center items-center mb-4">
         <Avatar>
           <AvatarImage src={avatarImg} className="w-16 mb-1" />
