@@ -81,14 +81,14 @@ export function HelpCenter() {
 
         <div className=" pb-0">
           <div className="m-5">
-            <h5 className="text-center font-semibold">
+            <h5 className="text-center font-semibold mb-3">
               Welcome to the Help Center! How can we assist you today?
             </h5>
 
             <div>
-              <h4 className="font-bold mb-3">FAQs</h4>
+              <h4 className="font-bold my-4">FAQs</h4>
 
-              <Accordion type="single" collapsible className="flex flex-col gap-2">
+              <Accordion type="single" collapsible className="flex flex-col gap-3">
                 {faqs.map((item, i) => (
                   <Card className="p-3 rounded-sm bg-[#0f0f0f] border-0">
                     <AccordionItem value={`item-${i + 1}`} className=" ">
@@ -102,8 +102,8 @@ export function HelpCenter() {
               </Accordion>
             </div>
 
-            <div className="flex flex-col w-full mt-4">
-              <h4 className="font-bold mb-2">Contact Support</h4>
+            <div className="flex flex-col w-full mt-5 text-center">
+              <h4 className="font-bold mb-1">Contact Support</h4>
               <p className="text-sm">
                 <a href="mailto:support@fiatswap.com">Email: support@fiatswap.com</a>
               </p>

@@ -10,7 +10,7 @@ const BottomNavigation = () => {
       <Link to={"/"}>
         <div
           className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/" && "text-purple-600"
+            location === "/" && "text-purple-500"
           }`}
         >
           <HomeIcon className="text-xl" />
@@ -21,7 +21,7 @@ const BottomNavigation = () => {
       <Link to={"/referrals"}>
         <div
           className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/referrals" && "text-purple-600"
+            location === "/referrals" && "text-purple-500"
           }`}
         >
           <Users className="text-xl" />
@@ -32,7 +32,7 @@ const BottomNavigation = () => {
       <Link to={"/tasks"}>
         <div
           className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/tasks" && "text-purple-600"
+            location === "/tasks" && "text-purple-500"
           }`}
         >
           <HandCoins className="text-xl" />
@@ -43,7 +43,7 @@ const BottomNavigation = () => {
       <Link to={"/profile"}>
         <div
           className={`text-white flex justify-center items-center flex-col cursor-pointer rounded-lg py-1 ${
-            location === "/profile" && "text-purple-600"
+            location === "/profile" && "text-purple-500"
           }`}
         >
           <User className="text-xl" />
