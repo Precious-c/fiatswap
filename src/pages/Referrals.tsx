@@ -32,7 +32,7 @@ const Referrals = () => {
         {/* frens list */}
         <div className="flex flex-col gap-2">
           {user.referredFriends &&
-            user.referredFriends.map((friend, i) => (
+            user.referredFriends.map((friend) => (
               <Card
                 key={friend.username}
                 className="flex items-center p-1 gap-2 justify-between border-0"
