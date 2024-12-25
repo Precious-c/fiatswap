@@ -1,11 +1,9 @@
 import { bouncy } from "ldrs";
 
 bouncy.register();
-import { QRCodeSVG } from "qrcode.react";
-import { Button } from "@/components/ui/button";
+
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerDescription,
   DrawerHeader,
@@ -13,48 +11,24 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { useState } from "react";
-import { banks, user } from "@/data";
-import { Card, CardContent, CardTitle } from "./ui/card";
-// import { copyToClipboard } fro@/utils/copyToClipboardard";
-import toast from "react-hot-toast";
-import { Check, ChevronRight, ChevronsUpDown, User, Verified } from "lucide-react";
-import { z } from "zod";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "./ui/form";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "./ui/input";
-import { UpdateInfoform } from "./UpdateInfoform";
-import { Popover, PopoverContent, PopoverTrigger } from "@radix-ui/react-popover";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-} from "@/components/ui/command";
-import { cn } from "@/lib/utils";
-import { CommandList } from "cmdk";
-import { Badge } from "./ui/badge";
-
-const transaction = user.transactionHistory[0];
-
-const formSchema = z.object({
-  fullName: z.string(),
-  // profilePicture: z.string().url(),
-  email: z.string().email(),
-  // password: z.string(),
-  bankName: z.string(),
-  accountName: z.string(),
-  accountNumber: z.string().length(10, { message: "Account number must be 10 digits long" }),
-});
+import { user } from "@/data";
+import { Card, CardTitle } from "./ui/card";
+// import toast from "react-hot-toast";
+import { Badge, ChevronRight, Verified } from "lucide-react";
+// import {
+//   Form,
+//   FormControl,
+//   FormDescription,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormMessage,
+// } from "./ui/form";
+// import { useForm } from "react-hook-form";
+// import { zodResolver } from "@hookform/resolvers/zod";
+// import { Input } from "./ui/input";
+// import { Button } from "./ui/button";
+// import { z } from "zod";
 
 export function VerificationDrawer() {
   const [loading, setLoading] = useState<boolean>(false);
@@ -62,27 +36,27 @@ export function VerificationDrawer() {
   setTimeout(() => setLoading(false), 2000);
 
   // form definition
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      fullName: user.fullName,
-      email: user.email,
-      // password: "",
-      bankName: user.bank.bankName,
-      accountName: user.bank.accountName,
-      accountNumber: user.bank.accountNumber,
-    },
-  });
+  // const form = useForm<z.infer<typeof formSchema>>({
+  //   resolver: zodResolver(formSchema),
+  //   defaultValues: {
+  //     fullName: user.fullName,
+  //     email: user.email,
+  //     // password: "",
+  //     bankName: user.bank.bankName,
+  //     accountName: user.bank.accountName,
+  //     accountNumber: user.bank.accountNumber,
+  //   },
+  // });
 
   // submit handler
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  // function onSubmit(values: z.infer<typeof formSchema>) {
+  //   console.log(values);
 
-    toast.success("Profile Updated", {
-      icon: "🤝",
-      style: { backgroundColor: "black", color: "white" },
-    });
-  }
+  //   toast.success("Profile Updated", {
+  //     icon: "🤝",
+  //     style: { backgroundColor: "black", color: "white" },
+  //   });
+  // }
 
   return (
     <Drawer>
@@ -123,7 +97,7 @@ export function VerificationDrawer() {
                     Tier 3
                   </Badge>
                 </div>
-                <Form {...form}>
+                {/* <Form {...form}>
                   <form noValidate onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
                     <FormField
                       control={form.control}
@@ -158,7 +132,7 @@ export function VerificationDrawer() {
                       <Button type="submit">Save</Button>
                     </DrawerClose>
                   </form>
-                </Form>
+                </Form> */}
                 {/* <UpdateInfoform /> */}
               </div>
             )}

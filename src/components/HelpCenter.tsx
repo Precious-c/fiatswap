@@ -1,66 +1,13 @@
 import { bouncy } from "ldrs";
-
 bouncy.register();
-import { QRCodeSVG } from "qrcode.react";
-import { Button } from "@/components/ui/button";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import { useState } from "react";
-import { banks, user } from "@/data";
-import { Card, CardContent, CardTitle } from "./ui/card";
-// import { copyToClipboard } fro@/utils/copyToClipboardard";
-import toast from "react-hot-toast";
-import { Check, ChevronDown, ChevronRight, ChevronsUpDown, HelpCircle, User } from "lucide-react";
-import { z } from "zod";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "./ui/form";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "./ui/input";
-import { UpdateInfoform } from "./UpdateInfoform";
-import { Popover, PopoverContent, PopoverTrigger } from "@radix-ui/react-popover";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-} from "@/components/ui/command";
-import { cn } from "@/lib/utils";
-import { CommandList } from "cmdk";
+import { Card } from "./ui/card";
+import { ChevronDown } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@radix-ui/react-accordion";
-import { Separator } from "@radix-ui/react-dropdown-menu";
-
-const transaction = user.transactionHistory[0];
-
-const formSchema = z.object({
-  fullName: z.string(),
-  // profilePicture: z.string().url(),
-  email: z.string().email(),
-  // password: z.string(),
-  bankName: z.string(),
-  accountName: z.string(),
-  accountNumber: z.string().length(10, { message: "Account number must be 10 digits long" }),
-});
 
 export function HelpCenter() {
   const faqs = [
